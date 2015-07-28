@@ -140,6 +140,7 @@ a {
 
 #comments {
   margin-right: 0;
+  margin-left: 5%;
   float: left;
   text-align: left;
 }
@@ -156,17 +157,21 @@ a {
 
 #bonus {
   margin-left: 0;
+  margin-right: 5%;
   float: right;
   text-align: left;
 }
 
-#bottomsitenav a {
-  display: inline;
-  padding: 0 20px;
+#webcomiclist a:hover {
+    border-bottom: #2C6700 solid 1px;
 }
 
-#bottomsitenav a:hover,
-#webcomiclist a:hover {
+#bottomsitenav a {
+  display: inline;
+  margin: 0 20px;
+}
+
+#bottomsitenav a:hover {
     border-bottom: #2C6700 solid 2px;
 }
 
