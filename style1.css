@@ -1,0 +1,174 @@
+/*Element Selectors*/
+
+body {
+  font-size: 1em;
+  background: linear-gradient(#99CCFF, #8bbeff);
+  margin: 0px auto;
+  padding: 0;
+  width: 1200px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Class Selectors*/
+
+.advertisement {
+  display: none;
+}
+
+.maintitle img {
+  max-width: 50%;
+  display: inline-block;
+}
+
+/*Navigators*/
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #99CCFF;
+    border: 2px;
+    border-style: solid;
+    border-color: #3399FF;
+}
+
+/*.nav li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #99CCFF;
+    border: 2px;
+    border-style: solid;
+    border-color: #3399FF;
+}*/
+
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0066FF;
+}
+
+.nav .comicnav {
+  padding: 0;
+  background: none;
+  border: none;
+  display: inline;
+}
+
+.comicnav img {
+  max-width: 5%;
+  padding: 0 20px 0 20px;
+}
+
+.topcomicnav img {
+  margin-bottom: -19px;
+}
+
+.bottomcomicnav img {
+  margin-top: -19px;
+}
+
+/*.first_comic {
+  border-radius: 20% 0 0 20%;
+}
+
+.last_comic {
+  border-radius: 0 20% 20% 0;
+}*/
+
+/*Comic*/
+.maincontent img {
+    width: 90%;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+/*Bottom Bits*/
+.secondarycontent {
+  display: inline-block;
+  background-color: #fff;
+  /*margin-top: -20px;*/
+  width: 45%;
+  border-radius: 20%;
+  border-style: solid;
+  border-color: #3399FF;
+  margin: 10px 0;
+}
+
+.leftcolumn {
+  float: left;
+  padding-left: 1%;
+  text-align: left;
+}
+.rightcolumn {
+  float: right;
+  width: 50%;
+}
+
+.footer {
+  clear: both;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20% 20% 0 0;
+  width: 75%;
+  margin: auto;
+  border-style: solid;
+  border-color: #3399FF;
+  line-height: 0;
+  max-width: 1024px;
+}
+
+.sitenav {
+  border-radius: 0 0 20% 20%;
+  margin: 0 1em 1em;
+}
+
+
+/*ID Selectors*/
+
+#container {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0 1px 0;
+  margin: -10px 5% 0 5%;
+  border-radius: 0 0 10% 10%;
+  border-style: solid;
+  border-color: #3399FF;
+}
+
+
+/*Header Stuff*/
+
+/*#comic_page {
+  border-radius: 0 0 0 20%;
+}
+
+#sketch_page {
+  border-radius: 0 0 20% 0;
+}*/
+
+/*Comic Content Stuff*/
+/*#contenttopnav {
+  margin-bottom: -10px;
+}
+
+#contentbottomnav {
+  margin-top: -24px;
+}*/
+
+
+/*Bottom Content Stuff*/
+#commenttitle{
+  margin-bottom: 0;
+}
+
+#date {
+  font-size: .7em;
+  margin-top: 0;
+}
