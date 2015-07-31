@@ -111,23 +111,23 @@ a {
 }
 
 .first {
-  background: transparent url("img/first.png") no-repeat scroll 50% 50%;
+  background: transparent url("img/firstgreen.png") no-repeat scroll 50% 50%;
 }
 
 .prev {
-  background: transparent url("img/prev.png") no-repeat scroll 50% 50%;
+  background: transparent url("img/prevgreen.png") no-repeat scroll 50% 50%;
 }
 
 .archive {
-  background: transparent url("img/archive.png") no-repeat scroll 50% 50%;
+  background: transparent url("img/archivegreen.png") no-repeat scroll 50% 50%;
 }
 
 .next {
-  background: transparent url("img/next.png") no-repeat scroll 50% 50%;
+  background: transparent url("img/nextgreen.png") no-repeat scroll 50% 50%;
 }
 
 .last {
-  background: transparent url("img/last.png") no-repeat scroll 50% 50%;
+  background: transparent url("img/lastgreen.png") no-repeat scroll 50% 50%;
 }
 
 /*Bottom Content*/
