@@ -85,13 +85,15 @@ a {
 
 #topsitenav a {
     background-color: #2C6700;
-    border: solid #2C6700 10px;
+    /*border: solid black 2px;*/
+    padding: 9px;
     color: #E5E4D7;
 }
 
 #topsitenav a:hover {
   background-color: #6A8347;
-  border: solid #6A8347 10px;
+  /*border: solid black 2px;*/
+  padding: 9px;
   color: #E5E4D7;
 }
 
