@@ -197,3 +197,61 @@ a {
 /*div {
   border: solid red 1px;
 }*/
+
+/*Media Queries*/
+
+@media (max-width:360px) {
+  body {
+    width: auto;
+  }
+  .sitenav a {
+    display: none;
+  }
+  .header {
+    margin: auto;
+  }
+  .comicwrapper {
+    padding: 20px 0 0 0;
+    margin: auto auto 0;
+  }
+  #logo,
+  #banner {
+    display: block;
+    clear: both;
+    margin: auto;
+    padding: 0;
+  }
+  .secondarycontent {
+    max-width: 90%;
+    margin: 0 1% 0 1%;
+    padding: 1%;
+  }
+  #comments {
+    margin-right: 5%;
+    margin-left: 5%;
+    clear: both;
+    text-align: left;
+  }
+  #commenttitle {
+    line-height: 1rem;
+    font-size: 1.25em;
+  }
+  #commentdate {
+    font-weight: normal;
+    font-size: .8em;
+    line-height: .5em;
+  }
+  #bonus {
+    display: none;
+  }
+  .comicnav a {
+    width: 39.5px;
+    height: 39.5px;
+    background-size: 90%;
+    margin: 0 2%;
+    padding: 0;
+  }
+  .comicnav .archive {
+    display: none;
+  }
+}
