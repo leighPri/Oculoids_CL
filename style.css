@@ -84,8 +84,6 @@ a {
 
 #topsitenav {
   float: right;
-  padding: 0 20px;
-  margin: -27px 0 0 0;
 }
 
 #topsitenav a {
@@ -200,16 +198,14 @@ a {
 
 /*Media Queries*/
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   body {
-    width: 1150px;
+    width: 768px;
   }
   .sitenav a {
     display: inline-block;
   }
-  .header {
-    margin-bottom: -24px;
-  }
+
   .headerwrapper {
     max-width: 75%;
   }
@@ -223,7 +219,7 @@ a {
   }
   #logo {
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
   }
   #banner {
     margin: 0;
@@ -232,7 +228,7 @@ a {
     float: right;
   }
   .secondarycontent {
-  max-width: 45%;
+  max-width: 40%;
   }
   #comments {
     float: left;
@@ -244,18 +240,17 @@ a {
     float: right;
     text-align: left;
   }
-  .comiccontent img {
-    max-width: 80%;
-    margin: 0 auto;
-  }
   .comicnav a {
-    width: 79px;
-    height: 79px;
+    width: 69px;
+    height: 69px;
     margin: 0 2%;
     padding: 0;
   }
   .comicnav .archive {
     display: inline-block;
+  }
+  #topsitenav {
+    margin: -57px 0 0 0;
   }
   #bottomsitenav a {
     margin: 0 20px;
@@ -263,5 +258,37 @@ a {
   /*non-comic pages*/
   .maincontent {
     margin: -50px auto 0;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    width: 1150px;
+  }
+  .header {
+    margin-bottom: -24px;
+  }
+  #topsitenav {
+    margin: -27px 0 0 0;
+    padding: 0 20px;
+  }
+  .comicnav a {
+    width: 79px;
+    height: 79px;
+    margin: 0 2%;
+    padding: 0;
+  }
+  #logo {
+    padding-bottom: 5px;
+  }
+  .secondarycontent {
+  max-width: 45%;
+  }
+  #commenttitle {
+    line-height: 1rem;
+    font-size: 1.75em;
+  }
+  .comiccontent img {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
