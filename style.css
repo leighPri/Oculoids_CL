@@ -195,12 +195,12 @@ a {
   border-top: #6A8347 solid 10px;
   text-align: left;
   padding: 20px 5% 5%;
-  margin: -50px auto 0;
+  margin: auto;
 }
 
 /*Media Queries*/
 
-@media (min-width:720px) {
+@media (min-width: 768px) {
   body {
     width: 1150px;
   }
@@ -259,5 +259,9 @@ a {
   }
   #bottomsitenav a {
     margin: 0 20px;
+  }
+  /*non-comic pages*/
+  .maincontent {
+    margin: -50px auto 0;
   }
 }
