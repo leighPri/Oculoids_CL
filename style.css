@@ -8,7 +8,7 @@ body {
   font-family: 'Noto Sans', 'Montserrat', Helvetica, Arial, sans-serif;
   text-align: center;
   background-color: #6A8347; /*Former color 2C6700*/
-  width: 1150px;
+  width: auto;
 }
 
 li {
@@ -30,17 +30,21 @@ a {
   display: inline-block;
 }
 
+.sitenav a {
+  display: none;
+}
+
 /*Wrappers*/
 
 .masterwrapper {
   background-color: #FEFCD7;
   margin: 0 auto;
   padding-top: 1%;
-  /*border: #E5E4D7 solid 1px;*/
 }
 
 .headerwrapper {
-  max-width: 75%;
+  clear: both;
+  max-width: 100%;
   text-align: center;
   margin: auto;
 }
@@ -48,33 +52,34 @@ a {
 .contentwrapper {
   margin: 5% 0;
   background-color: #E5E4D7;
-  border-bottom: #6A8347 solid 10px;
+  border-bottom: #6A8347 solid 5px;
 }
 
 .comicwrapper {
-  border-top: #6A8347 solid 10px;
-  padding: 20px 0 0 0;
-  margin: -50px auto 0;
+    padding: 20px 0 0;
+    margin: 0;
+    border-top: #6A8347 solid 5px;
 }
 
 /*Header*/
 
 .header {
-  margin-bottom: -24px;
+  margin: auto;
+}
+
+#logo,
+#banner {
+  display: block;
+  margin: auto;
+  padding: 0;
 }
 
 #logo {
   max-width: 27%;
-  display: inline-block;
-  padding-bottom: 5px;
 }
 
 #banner {
   max-width: 60%;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  float: right;
 }
 
 #topsitenav {
@@ -99,21 +104,18 @@ a {
 
 /*Comic*/
 
-.comic {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.mobilecomic {
-  display: none;
+.comiccontent img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .comicnav a {
-  width: 79px;
-  height: 79px;
+  width: 39.5px;
+  height: 39.5px;
   background-size: 90%;
-  margin: 0 2%;
-  padding: 0;
+  margin: 0 3%;
+  padding: 7px;
 }
 
 .first {
@@ -127,6 +129,9 @@ a {
 .archive {
   background: transparent url("img/archivegreen.png") no-repeat scroll 50% 50%;
 }
+.comicnav .archive {
+  display: none;
+}
 
 .next {
   background: transparent url("img/nextgreen.png") no-repeat scroll 50% 50%;
@@ -139,20 +144,20 @@ a {
 /*Bottom Content*/
 
 .secondarycontent {
-  max-width: 45%;
+  max-width: 90%;
   margin: 0 1% 0 1%;
   padding: 1%;
 }
 
 #comments {
-  margin-right: 0;
+  margin-right: 5%;
   margin-left: 5%;
-  float: left;
   text-align: left;
 }
 
 #commenttitle {
   line-height: 1rem;
+  font-size: 1.25em;
 }
 
 #commentdate {
@@ -162,10 +167,7 @@ a {
 }
 
 #bonus {
-  margin-left: 0;
-  margin-right: 5%;
-  float: right;
-  text-align: left;
+  display: none;
 }
 
 #webcomiclist a:hover {
@@ -174,7 +176,7 @@ a {
 
 #bottomsitenav a {
   display: inline;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 #bottomsitenav a:hover {
@@ -196,87 +198,66 @@ a {
   margin: -50px auto 0;
 }
 
-/*This red border is a temporary style to help see where things are on the page*/
-
-/*div {
-  border: solid red 1px;
-}*/
-
 /*Media Queries*/
 
-@media (max-width:360px) {
+@media (min-width:720px) {
   body {
-    width: auto;
+    width: 1150px;
   }
   .sitenav a {
-    display: none;
+    display: inline-block;
   }
   .header {
-    margin: auto;
+    margin-bottom: -24px;
+  }
+  .headerwrapper {
+    max-width: 75%;
   }
   .comicwrapper {
-    padding: 20px 0 0;
-    margin: 0;
-    border-top: #6A8347 solid 5px;
+    border-top: #6A8347 solid 10px;
+    padding: 20px 0 0 0;
+    margin: -50px auto 0;
   }
   .contentwrapper {
-    margin: 5% 0;
-    background-color: #E5E4D7;
-    border-bottom: #6A8347 solid 5px;
+    border-bottom: #6A8347 solid 10px;
   }
-  #logo,
+  #logo {
+    display: inline-block;
+    padding-bottom: 5px;
+  }
   #banner {
-    display: block;
-    clear: both;
-    margin: auto;
-    padding: 0;
-  }
-  .secondarycontent {
-    max-width: 90%;
-    margin: 0 1% 0 1%;
-    padding: 1%;
-  }
-  #comments {
-    margin-right: 5%;
-    margin-left: 5%;
-    clear: both;
-    text-align: left;
-  }
-  #commenttitle {
-    line-height: 1rem;
-    font-size: 1.25em;
-  }
-  #commentdate {
-    font-weight: normal;
-    font-size: .8em;
-    line-height: .5em;
-  }
-  #bonus {
-    display: none;
-  }
-  .comic {
-    width: 100%;
     margin: 0;
     padding: 0;
+    display: inline-block;
+    float: right;
+  }
+  .secondarycontent {
+  max-width: 45%;
+  }
+  #comments {
+    float: left;
+  }
+  #bonus {
+    display: block;
+    margin-left: 0;
+    margin-right: 5%;
+    float: right;
+    text-align: left;
+  }
+  .comiccontent img {
+    max-width: 80%;
+    margin: 0 auto;
   }
   .comicnav a {
-    width: 39.5px;
-    height: 39.5px;
-    background-size: 90%;
-    margin: 0 3%;
-    padding: 7px;
+    width: 79px;
+    height: 79px;
+    margin: 0 2%;
+    padding: 0;
   }
   .comicnav .archive {
-    display: none;
+    display: inline-block;
   }
   #bottomsitenav a {
-    display: inline;
-    margin: 0 10px;
-  }
-  .standardcomic {
-    display: none;
-  }
-  .mobilecomic {
-    display: inline-block;
+    margin: 0 20px;
   }
 }
