@@ -15,6 +15,10 @@ jQuery(document).ready(function($) {
 		/*
 		If the lightbox window HTML already exists in document,
 		change the img src to to match the href of whatever link was clicked
+<<<<<<< HEAD
+=======
+
+>>>>>>> f7f7ac17de55fcf6a4656b4be5742d684a21773d
 		If the lightbox window HTML doesn't exists, create it and insert it.
 		(This will only happen the first time around)
 		*/
