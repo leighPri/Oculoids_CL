@@ -5,9 +5,9 @@ var htmlIndex; //holds index location of whatever.html beginning
 var shortUrl; //holds shortened url
 
 //gets index place for pageID.html and searches for the index for index.html if not found
-htmlIndex = fullUrl.indexOf(pageID);
+htmlIndex = fullUrl.indexOf(pageID + ".html");
   if (htmlIndex == -1) {
-    htmlIndex = fullUrl.indexOf("index");
+    htmlIndex = fullUrl.indexOf("index.html");
   }
   console.log(htmlIndex);
 
