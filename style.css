@@ -108,12 +108,14 @@ a {
   padding: 0;
 }
 
-.comicnav a {
+.comicnav a,
+.comicnav span {
   width: 39.5px;
   height: 39.5px;
   background-size: 90%;
   margin: 0 3%;
   padding: 7px;
+  display: inline-block;
 }
 
 .first {
@@ -263,7 +265,8 @@ a {
     float: right;
     text-align: left;
   }
-  .comicnav a {
+  .comicnav a,
+  .comicnav span {
     width: 69px;
     height: 69px;
     margin: 0 2%;
@@ -294,7 +297,8 @@ a {
     margin: -27px 0 0 0;
     padding: 0 20px;
   }
-  .comicnav a {
+  .comicnav a,
+  .comicnav span {
     width: 79px;
     height: 79px;
     margin: 0 2%;
