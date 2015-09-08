@@ -1,6 +1,16 @@
-//capture .prev and .next elements
-//assign their attributes to pageID-- + ".html" and pageID++ + ".html" respectively.
-//Figure out why the button press bits
+
+//ajax call to populate comment div
+
+var callexample = $.get("js/comments.txt", function(response, status, data){ //gets comments.json
+  console.log(data.header);
+  // if (data.pageIDcheck === pageID) {
+  //   $("#comments").innerHTML(data.header + data.date + data.comment);
+  // }
+});
+console.log(callexample);
+
+
+//sets prev links to be one less than the pageID variable
 var setPrev = function(link) {
   if (firstPage){
     $(link).click($(link).attr("href", "1.html"));
@@ -12,6 +22,7 @@ var setPrev = function(link) {
     }
 }
 
+//sets nexxt links to be one more than the pageID variable
 var setNext = function(link){
   if (lastPage){
     $(link).click($(link).attr("href", "index.html"));
@@ -23,6 +34,7 @@ var setNext = function(link){
     }
 }
 
+//executes above functions
 setPrev("#prevComic");
 setPrev("#prevComic2");
 setNext("#nextComic");
@@ -71,15 +83,3 @@ document.onkeydown = function(e) {
             break;
     }
 };
-
-// $(".prev").click(event){
-//   event.preventDefault();
-//   if (firstPage){
-//     alert("You're already at the first comic!");
-//   } else {
-//     pageID--;
-//     pageID += ".html";
-//     $(".prev").attr('href',pageID);
-//     $(".prev").trigger('click');
-//   }
-// }
