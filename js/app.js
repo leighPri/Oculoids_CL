@@ -1,15 +1,3 @@
-
-//ajax call to populate comment div
-
-var callexample = $.get("js/comments.txt", function(response, status, data){ //gets comments.json
-  console.log(data.header);
-  // if (data.pageIDcheck === pageID) {
-  //   $("#comments").innerHTML(data.header + data.date + data.comment);
-  // }
-});
-console.log(callexample);
-
-
 //sets prev links to be one less than the pageID variable
 var setPrev = function(link) {
   if (firstPage){

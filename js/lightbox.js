@@ -44,3 +44,16 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+
+//to add:
+//if the window is above a certain size the lightbox is disabled and clicking on
+//the image instead takes you to the next comic page.
+// if ($(window).width() < 1080) {
+// 	$('.comiccontent a').addClass('lightbox_trigger');
+// } else if ($(window).width() >= 1080) {
+// 	var disabledLightboxHolder = pageID;
+// 	$(.comiccontent a).removeClass('lightbox_trigger');
+// 	disabledLightboxHolder++;
+// 	$(.comiccontent a).attr("href", disabledLightboxHolder + ".html");
+// }
