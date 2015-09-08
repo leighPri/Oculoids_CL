@@ -1,17 +1,16 @@
 //ajax call to populate comment div
-
 var commentcall = $.ajax("js/comments.json", {
     success: function(data) {
-      console.log(data);
-      $.each(data, function(index, element){
+      $.each(data, function() {
         if (this.pageIDcheck === pageID) {
-          $('#comments').html(this.header + this.date + this.comment);
+          var headerHolder = "<h1 id='commenttitle'>" + this.header + "</h1>";
+          var dateholder = "<h3 id='commentdate'>" + this.date + "</h3>";
+          var commentHolder = "<p>" + this.comment + "</p>";
+          $('#comments').html(headerHolder + dateholder + commentHolder);
         }
       });
     }
 });
-
-commentcall();
 
 //sets prev links to be one less than the pageID variable
 var setPrev = function(link) {
@@ -25,7 +24,7 @@ var setPrev = function(link) {
     }
 }
 
-//sets nexxt links to be one more than the pageID variable
+//sets next links to be one more than the pageID variable
 var setNext = function(link){
   if (lastPage){
     $(link).click($(link).attr("href", "index.html"));
@@ -38,6 +37,7 @@ var setNext = function(link){
 }
 
 //executes above functions
+commentcall();
 setPrev("#prevComic");
 setPrev("#prevComic2");
 setNext("#nextComic");
