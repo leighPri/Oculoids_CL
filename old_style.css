@@ -82,6 +82,19 @@ a {
   max-width: 73%;
 }
 
+/* Hides image logo so text one can be shown */
+#banner {
+  display: none;
+}
+
+#bannerText {
+  font-size: 3rem;
+  margin: 0;
+  font-color: #6A8347;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+
 #topsitenav {
   float: right;
 }
@@ -242,6 +255,9 @@ a {
   }
   .contentwrapper {
     border-bottom: #6A8347 solid 10px;
+  }
+  #bannerText {
+    display: none;
   }
   #logo {
     display: inline-block;

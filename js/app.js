@@ -1,3 +1,18 @@
+//ajax call to populate comment div
+
+var commentcall = $.ajax("js/comments.json", {
+    success: function(data) {
+      console.log(data);
+      $.each(data, function(index, element){
+        if (this.pageIDcheck === pageID) {
+          $('#comments').html(this.header + this.date + this.comment);
+        }
+      });
+    }
+});
+
+commentcall();
+
 //sets prev links to be one less than the pageID variable
 var setPrev = function(link) {
   if (firstPage){
@@ -71,6 +86,3 @@ document.onkeydown = function(e) {
             break;
     }
 };
-
-//twitter's widget js info
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
