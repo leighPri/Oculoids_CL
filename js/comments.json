@@ -13,12 +13,24 @@
     },
     {
         "pageIDcheck": 3,
+        "header": "Online Recipes",
+        "date": "8/6/2015",
+        "comment": "I don’t know why people hide prep time in the ingredients list of the recipes they post online. I’m perfectly happy to cook something more elaborate but the it’s the lies that drive me bonkers. This is also one of the many reasons why you should read a recipe in full before you start cooking."
+    },
+    {
+        "pageIDcheck": 4,
         "header": "Contact Lens",
         "date": "8/6/2015",
         "comment": "This is a completely accurate portrayal of how putting in contacts works, by the by, I wore them for years."
     },
     {
-        "pageIDcheck": 4,
+        "pageIDcheck": 5,
+        "header": "Spelling Counts",
+        "date": "8/6/2015",
+        "comment": "When you want to elongate a word you shouldn’t use hard consonants or silent letters to do so or this is what I hear in my head. I wouldn’t go so far as to call this an outright pet peeve as it doesn’t REALLY annoy me, but it is weird to parse words in your head this way because people don’t think about it when typing. The exceptions are consonants that can be stressed (like N, M, F, or S)."
+    },
+    {
+        "pageIDcheck": 6,
         "header": "Oculoids...in...Spaaaaaaaaace",
         "date": "8/6/2015",
         "comment": "Nothing interesting to say today."
