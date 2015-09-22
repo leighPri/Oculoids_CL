@@ -211,6 +211,10 @@ a {
   margin: auto;
 }
 
+.maincontent a:hover {
+      border-bottom: #2C6700 solid 1px;
+}
+
 /*Lightbox*/
 #lightbox {
     position:fixed; /* keeps the lightbox window in the current viewport */
