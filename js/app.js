@@ -105,12 +105,10 @@ $(document).ready(function($) {
 	} else if ($('#lightbox').length > 0) { // #lightbox exists
 			//place href as img src value
 			$('#content').html('<img src="' + image_href + '" />');
-			//show lightbox window - you could use .show('fast') for a transition
 			$('#lightbox').show();
 		}
 
-		else { //#lightbox does not exist - create and insert (runs 1st time only)
-			//create HTML markup for lightbox window
+		else {
 			var lightbox =
 			'<div id="lightbox">' +
 				'<p>Click anywhere to close</p>' +
@@ -124,7 +122,7 @@ $(document).ready(function($) {
 	});
 
 	//Click anywhere on the page to get rid of lightbox window
-	$('body').on('click', '#lightbox', function() { //must use live, as the lightbox element is inserted into the DOM
+	$('body').on('click', '#lightbox', function() {
 		$('#lightbox').hide();
 	});
 });
